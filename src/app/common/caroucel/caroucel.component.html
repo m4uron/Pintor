@@ -1,0 +1,36 @@
+<p-carousel
+  [value]="service"
+  [numVisible]="3"
+  [numScroll]="3"
+  [circular]="true"
+  [responsiveOptions]="responsiveOptions"
+>
+  <ng-template let-car pTemplate="item">
+    <div class="car-details">
+      <div class="p-grid p-nogutter">
+        <div class="p-col-12">
+          <img
+            class="img-fluid img-thumbnail"
+            id="imgCard"
+            src="../../assets/img/home/servicios/{{ car.urlImg }}"
+          />
+        </div>
+        <div class="p-col-12 car-data text-center">
+          <div class="car-title">
+            <h3>{{ car.title }}</h3>
+          </div>
+          <div class="car-subtitle">
+            <p>{{ car.description }}</p>
+          </div>
+
+          <!-- <div class="car-buttons">
+                        <button pButton type="button" class="ui-button-secondary" icon="pi pi-search">c</button>
+                        <button pButton type="button" class="ui-button-secondary" icon="pi pi-star"></button>
+                        <button pButton type="button" class="ui-button-secondary" icon="pi pi-cog"></button>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
+
