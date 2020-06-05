@@ -2,3 +2,12 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, "Helvetica Neue", sans-serif; }
+body{
+    background-image: url(./assets/img/smoke-758276_1920.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    // backdrop-filter: blur(5px);
+}

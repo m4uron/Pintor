@@ -1,18 +1,15 @@
 .nv {
+  z-index: 10000;
+  background-color: rgba(9, 26, 73, 0.781) !important;
 
-    z-index: 10000;
-  background: rgb(36, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(36, 0, 0, 1) 0%,
-    rgba(25, 87, 6, 0.989) 50%,
-  );
-}
-a{
-  font-size: 1rem !important; 
-color: rgb(161, 143, 4) !important;
-&:hover{
-  color: rgb(161, 48, 4) !important;
 
 }
+a {
+  font-size: 1rem !important;
+
+  &:hover {
+    color: rgb(5, 172, 202) !important;
+  }
 }
+
+

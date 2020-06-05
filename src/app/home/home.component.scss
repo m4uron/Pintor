@@ -9,10 +9,48 @@ h1{
     height: 100%;
     // background-color: rgba(0, 0, 0, 0.479);
 }
-#colision{
+#contacto{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 .imgMarca{
     height: 60px;
     width: 100%;
     padding: 5px;
+    animation: Move 2s infinite ease;
+
+}
+h2{
+    animation: changeColor 5s infinite ease;
+
+}
+
+@keyframes changeColor {
+  20% {
+    // background-color: rgba(5, 44, 1, 0.596) !important;
+color: white;
+  }
+
+  40% {
+    // background-color: rgba(44, 17, 1, 0.596) !important;
+color: rgb(207, 207, 169);
+  }
+  60% {
+    // background-color: rgba(5, 44, 1, 0.596) !important;
+color: rgb(218, 209, 217);
+  }
+  87% {
+    // background-color: rgba(5, 44, 1, 0.596) !important;
+color: rgb(107, 221, 224);
+  }
+  100% {
+    // background-color: rgba(5, 44, 1, 0.596) !important;
+color: rgb(38, 36, 59);
+  }
+
+
+}
+@keyframes Move {
+    from{ padding: 5px;}
+    to{ padding: 0;}
 }
